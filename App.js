@@ -40,6 +40,7 @@ export default function App() {
   // Values
   const scale = useRef(new Animated.Value(1)).current;
   const position = useRef(new Animated.Value(0)).current;
+
   const rotation = position.interpolate({
     inputRange: [-250, 250],
     outputRange: ["-15deg", "15deg"],
